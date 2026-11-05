@@ -10,7 +10,7 @@ const [quantity, setQuantity] = useState(1);
   const [error, setError] = useState('');
 
   useEffect(() => {
-    fetch('http://https://imovies-backendmongo-uri.onrender.com/api/movies/api/movies')
+    fetch('http://https://imovies-backendmongo-uri.onrender.com/api/movies')
       .then((response) => {
         if (!response.ok) {
           throw new Error('Movies load nahi hui');
