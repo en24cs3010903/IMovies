@@ -10,7 +10,7 @@ const [quantity, setQuantity] = useState(1);
   const [error, setError] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/movies')
+    fetch('http://https://imovies-backendmongo-uri.onrender.com/api/movies/api/movies')
       .then((response) => {
         if (!response.ok) {
           throw new Error('Movies load nahi hui');
@@ -118,7 +118,7 @@ const [quantity, setQuantity] = useState(1);
   type="button"
   onClick={async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/bookings', {
+      const response = await fetch('http://https://imovies-backendmongo-uri.onrender.com/api/movies/api/bookings', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
